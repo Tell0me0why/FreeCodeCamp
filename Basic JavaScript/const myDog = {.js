@@ -1,9 +1,8 @@
 const myDog = {
-    // Only change code below this line
-  name : "hjk",
-  legs : 2,
-  tails : 5,
-  friends : []
-  
-    // Only change code above this line
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
   };
+  
+  myDog.bark = "woof";
