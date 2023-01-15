@@ -23,6 +23,7 @@ const recordCollection = {
   function updateRecords(records, id, prop, value) {
     if (prop != "tracks" && value.length >= 1) {
       records[id].artist = value;
+      return records;
     }
 
     else if (!records[id].hasOwnProperty("tracks") && value.length >= 1) {
