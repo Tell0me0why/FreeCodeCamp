@@ -42,4 +42,4 @@ const recordCollection = {
 
 updateRecords(recordCollection, 5439, "tracks", "Take a Chance on Me")
 
-  console.log(recordCollection['5439'].artist);
+  console.log(recordCollection['5439'].tracks);
