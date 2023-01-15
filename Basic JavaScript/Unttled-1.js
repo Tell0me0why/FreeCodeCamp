@@ -22,7 +22,7 @@ const recordCollection = {
   // Only change code below this line
   function updateRecords(records, id, prop, value) {
     if (prop != "tracks" && value.length >= 1) {
-      records[id].artist = value;
+      records[id][pop] = value;
       return records;
     }
 
