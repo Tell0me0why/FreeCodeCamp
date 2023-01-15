@@ -41,4 +41,4 @@ const recordCollection = {
 //console.log(recordCollection['5439'].artist, " ");
 updateRecords(recordCollection, 1245, "albumTitle", "Riptide")
 
-  console.log(recordCollection['5439'].albumTitle);
+  console.log(recordCollection['1245'].albumTitle);
