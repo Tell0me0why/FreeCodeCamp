@@ -25,11 +25,11 @@ const recordCollection = {
       records[id].artist = value;
     }
 
-    else if (records[id].hasOwnProperty("tracks") && value.length >= 1) {
+    else if (!records[id].hasOwnProperty("tracks") && value.length >= 1) {
       records[id].tracks = [];
       records[id].tracks.push(value)
     } else if (prop == "tracks" && value.length >= 1){
-       records[id]['tracks'].push(value)
+       records[id].tracks.push(value)
     }
   
     if (value.length < 1) {
@@ -39,7 +39,6 @@ const recordCollection = {
   }
   
 //console.log(recordCollection['5439'].artist, " ");
+updateRecords(recordCollection, 1245, "albumTitle", "Riptide")
 
-updateRecords(recordCollection, 5439, "tracks", "Take a Chance on Me")
-
-  console.log(recordCollection['5439'].tracks);
+  console.log(recordCollection['5439'].albumTitle);
