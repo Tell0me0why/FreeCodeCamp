@@ -37,7 +37,8 @@ const recordCollection = {
     return records;
   }
   
-  console.log(recordCollection['5439'].artist, " ");
+//console.log(recordCollection['5439'].artist, " ");
+
 
   updateRecords(recordCollection, 5439, 'artist', 'ABBA');
 
