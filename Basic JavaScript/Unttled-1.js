@@ -25,7 +25,7 @@ const recordCollection = {
       records[id].artist = value;
     }
 
-    else if (records.id.hasOwnProperety("tracks") && value.length >= 1) {
+    else if (records.id.hasOwnProperty("tracks") && value.length >= 1) {
       records[id].tracks = [];
       records[id].tracks.push(value)
     } else if (prop == "tracks" && value.length >= 1){
