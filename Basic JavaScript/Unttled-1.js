@@ -29,7 +29,7 @@ const recordCollection = {
       records[id].tracks = [];
       records[id].tracks.push(value)
     } else if (prop == "tracks" && value.length >= 1){
-       records[id].tracks.push(value);
+       records[id]['tracks'].push(value)
     }
   
     if (value.length < 1) {
