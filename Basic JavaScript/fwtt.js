@@ -29,7 +29,7 @@ const contacts = [
   function lookUpProfile(name, prop) {
     // Only change code below this line
     let answer1 = '';
-  for (let i = 0; i < contacts.length(); i++) {
+  for (let i = 0; i < contacts.length; i++) {
     if (contacts[i].hasOwnProperety(name)) {
         if (contacts[i].hasOwnProperety(prop)) {
             return contacts[i][prop];
