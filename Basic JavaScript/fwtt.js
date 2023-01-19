@@ -32,11 +32,11 @@ const contacts = [
   for (let i = 0; i < contacts.length; i++) {
     if (contacts[i].hasOwnProperty(name)) {
         if (contacts[i].hasOwnProperty(prop)) {
-            answer1 = contacts[i][prop];
-            break
+            return contacts[i][prop];
+          
         } else {
-            answer1 = "No such property"
-            break
+            return "No such property"
+         
         }
 
     } else {
