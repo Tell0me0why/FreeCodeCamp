@@ -30,8 +30,8 @@ const contacts = [
     // Only change code below this line
     let answer1 = '';
   for (let i = 0; i < contacts.length; i++) {
-    if (contacts[i].hasOwnProperety(name)) {
-        if (contacts[i].hasOwnProperety(prop)) {
+    if (contacts[i].hasOwnProperty(name)) {
+        if (contacts[i].hasOwnProperty(prop)) {
             return contacts[i][prop];
         } else {
             return "No such property"
