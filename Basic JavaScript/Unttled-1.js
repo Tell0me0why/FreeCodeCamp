@@ -1,45 +1,30 @@
-// Setup
-const recordCollection = {
-    2548: {
-      albumTitle: 'Slippery When Wet',
-      artist: 'Bon Jovi',
-      tracks: ['Let It Rock', 'You Give Love a Bad Name']
-    },
-    2468: {
-      albumTitle: '1999',
-      artist: 'Prince',
-      tracks: ['1999', 'Little Red Corvette']
-    },
-    1245: {
-      artist: 'Robert Palmer',
-      tracks: []
-    },
-    5439: {
-      albumTitle: 'ABBA Gold'
+const flip=(d, arr)=>{
+  //TODO
+  answer = [];
+  if (d == "R") {
+    for (let i = 0; i < arr.length; i++) {
+      for (let j = 0; j < arr.length - 1; j++) {
+        if (arr[j] > arr[j + 1]) {
+          let x = arr[j];
+          arr[j] = arr[j+1];
+          arr[j+1] = x;
+        }
+      }
     }
-  };
-  
-  // Only change code below this line
-  function updateRecords(records, id, prop, value) {
-    if (prop != "tracks" && value.length >= 1) {
-      records[id][prop] = value;
-      return records;
+    return arr;
+    
+  } else {
+    for (let i = 0; i < arr.length; i++) {
+      for (let j = 0; j < arr.length - 1; j++) {
+        if (arr[j] < arr[j + 1]) {
+          let x = arr[j];
+          arr[j] = arr[j+1];
+          arr[j+1] = x;
+        }
+      }
     }
+    return arr;
 
-    else if (!records[id].hasOwnProperty("tracks") && value.length >= 1) {
-      records[id].tracks = [];
-      records[id].tracks.push(value)
-    } else if (prop == "tracks" && value.length >= 1){
-       records[id].tracks.push(value)
-    }
-  
-    if (value.length < 1) {
-      delete records[id][prop];
-    }
-    return records;
   }
-  
-//console.log(recordCollection['5439'].artist, " ");
-updateRecords(recordCollection, 1245, "albumTitle", "Riptide")
-
-  console.log(recordCollection['1245'].albumTitle);
+  return 
+}
