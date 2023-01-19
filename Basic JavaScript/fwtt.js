@@ -33,8 +33,10 @@ const contacts = [
     if (contacts[i].hasOwnProperty(name)) {
         if (contacts[i].hasOwnProperty(prop)) {
             answer1 = contacts[i][prop];
+            break
         } else {
             answer1 = "No such property"
+            break
         }
 
     } else {
