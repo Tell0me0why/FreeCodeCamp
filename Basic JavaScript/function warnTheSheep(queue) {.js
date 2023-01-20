@@ -4,7 +4,7 @@ function warnTheSheep(queue) {
         if (i == queue.length -1) {
           return "Pls go away and stop eating my sheep"
         } else {
-          return "Oi! Sheep number "  + "! You are about to be eaten by a wolf!" +  [queue.length - i - 1 - 1]
+          return "Oi! Sheep number "  + "! You are about to be eaten by a wolf!" +  [queue.length - i - 1]
         }
       }
     }
