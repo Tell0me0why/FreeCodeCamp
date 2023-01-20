@@ -11,4 +11,4 @@ function warnTheSheep(queue) {
   
   }
 
-  console.log(warnTheSheep([sheep, sheep, sheep, sheep, sheep, wolf, sheep, sheep]));
+  console.log(warnTheSheep(["sheep", "sheep", "sheep", "sheep", "sheep", "wolf", "sheep", "sheep"]));
