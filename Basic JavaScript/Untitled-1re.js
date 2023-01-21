@@ -3,7 +3,7 @@ function countdown(n){
     if (n < 1) {
         return [];
       } else {
-        const countArray = countup(n - 1);
+        const countArray = coundown(n - 1);
         countArray.pop(n);
         return countArray;
       }
