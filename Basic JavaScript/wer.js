@@ -19,7 +19,7 @@ function alphabet(ns) {
     
  }
  ns.splice(k1,1);
- ns.splice(k2,1);
+ ns.splice(k2 - 1,1);
  console.log(ns);
  return ns[5] / ns[2];
    
