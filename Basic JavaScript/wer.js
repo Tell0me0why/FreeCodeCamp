@@ -13,8 +13,8 @@ function alphabet(ns) {
     
  }
  console.log(ns);
- return ns[5] / ns[3];
+ return ns[5] / ns[2];
    
    }
 
- console.log(alphabet([1, 12, 2, 2, 3, 4, 4, 6]));
+ console.log(alphabet([207,23,54,234,39,6,897,9]));
