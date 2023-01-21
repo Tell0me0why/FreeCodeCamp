@@ -3,7 +3,6 @@
 
 function alphabet(ns) {
  console.log(ns);
- m = ns[7];
  ns.sort(function(a, b){return a - b});
  console.log(ns);
  let k1 = 0;
@@ -13,13 +12,13 @@ function alphabet(ns) {
         if (k1 == k2) {
             k1 = ns[i];
         } else {
-            k2 = ns[i];
+            k2 = ns[i] - 1;
         }
     }
     
  }
- ns.splice(k1,1);
- ns.splice(k2 - 1,1);
+ ns.splice(k1, 1);
+ ns.splice(k2, 1);
  console.log(ns);
  return ns[5] / ns[2];
    
