@@ -10,18 +10,18 @@ function alphabet(ns) {
  for (let i = 0; i < 8; ++i) {
     if (ns[i] == ns[0] * ns[1] || ns[i] == ns[2] * ns[1]) {
         if (k1 == k2) {
-            k1 = ns[i];
+            k1 = i;
         } else {
-            k2 = ns[i] - 1;
+            k2 = i;
         }
     }
     
  }
- ns.splice(k1, 1);
- ns.splice(k2, 1);
+ ns.splice(k1 , 1);
+ ns.splice(k2 - 1, 1);
  console.log(ns);
- return ns[5] / ns[2];
+ return ns[3];
    
    }
 
- console.log(alphabet([207,23,54,234,39,6,897,9]));
+ console.log(alphabet([2, 5, 20, 21,   10, 100, 420, 42]));
