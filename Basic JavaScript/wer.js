@@ -6,12 +6,20 @@ function alphabet(ns) {
  m = ns[7];
  ns.sort(function(a, b){return a - b});
  console.log(ns);
+ let k1 = 0;
+ let k2 = 0;
  for (let i = 0; i < 8; ++i) {
     if (ns[i] == ns[0] * ns[1] || ns[i] == ns[2] * ns[1]) {
-        ns.splice(i,1);
+        if (k1 == k2) {
+            k1 = ns[i];
+        } else {
+            k2 = ns[i];
+        }
     }
     
  }
+ ns.splice(k1,1);
+ ns.splice(k2,1);
  console.log(ns);
  return ns[5] / ns[2];
    
