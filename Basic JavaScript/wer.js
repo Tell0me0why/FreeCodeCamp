@@ -2,7 +2,7 @@
 //A, B, C, D, AxB, BxC, CxD, DxA in some order. Your task is to return the value of D.
 
 function alphabet(ns) {
- ns.sort();
+ ns = ns.sort();
  console.log(ns);
  m = ns[7];
  console.log(ns);
