@@ -9,5 +9,4 @@ function countdown(n){
       }
     
     }
-    console.log(countdown(10))
-    // Only change code above this line
+   
