@@ -1,11 +1,11 @@
 function drawStairs(n) {
-    let t = "";
+    let t = " ";
     console.log( "I") ;
     for (let i = 0; i < n; ++i) {
 
-      console.log( " I") ;
+      console.log( t + "I") ;
+      t = t + " ";
 
     }
   }
 
-  drawStairs(5);
