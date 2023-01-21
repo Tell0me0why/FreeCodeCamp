@@ -3,7 +3,7 @@ function drawStairs(n) {
     for (let i = 0; i < n; ++i) {
       //console.log(t)
       console.log( "I\n") ;
-      t =+ " ";
+      t += " ";
     }
   }
 
