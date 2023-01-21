@@ -2,15 +2,17 @@
 //A, B, C, D, AxB, BxC, CxD, DxA in some order. Your task is to return the value of D.
 
 function alphabet(ns) {
- ns = ns.sort();
  console.log(ns);
  m = ns[7];
+ ns.sort(function(a, b){return a - b});
  console.log(ns);
  for (let i = 0; i < 8; ++i) {
     if (ns[i] == ns[0] * ns[1] || ns[i] == ns[2] * ns[1]) {
         ns.splice(i,1);
     }
+    
  }
+ console.log(ns);
  return ns[5] / ns[3];
    
    }
