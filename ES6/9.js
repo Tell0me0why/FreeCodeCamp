@@ -7,5 +7,5 @@ const HIGH_TEMPERATURES = {
   // Only change code below this line
   
   const {tomorrow, today} = HIGH_TEMPERATURES;
-  
+  console.log(tomorrow," ", today);
   // Only change code above this line
