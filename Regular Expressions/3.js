@@ -1,6 +1,7 @@
 let petString = "James has a pet cat.";
 let petRegex = /dog|cat|bird|fish/; // Change this line
 let result = petRegex.test(petString);
+cosole.log(result);
 /*
 Using regexes like /coding/, you can look for the pattern coding in another string.
 
