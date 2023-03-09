@@ -1,6 +1,7 @@
 let exampleStr = "Let's have fun with regular expressions!";
 let unRegex = /.un/; // Change this line
 let result = unRegex.test(exampleStr);
+console.log(result)
 /*
 Match Anything with Wildcard Period
 Sometimes you won't (or don't need to) know the
