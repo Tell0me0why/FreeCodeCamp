@@ -1,4 +1,4 @@
-let exampleStr = "Let's have fun with regular expressions!";
+let exampleStr = "Let's have fun with regular gun expressions!";
 let unRegex = /.un/; // Change this line
 let result = unRegex.test(exampleStr);
 let result2 = exampleStr.match(unRegex);
